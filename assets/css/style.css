@@ -313,9 +313,9 @@ body.overflow::before{
         padding: 0 20px;
         max-width: 520px;
     }
-    #team .vh-100, .content__row .vh-100{
-        min-height: 400px;
-    }
+    /* #team .vh-100, .content__row .vh-100{
+        min-height:500px;
+    } */
     .navbar .navbar-brand{
         font-size: 20px;
     }
