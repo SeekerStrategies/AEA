@@ -185,7 +185,7 @@ body.overflow::before{
     color: #79745c;
 }
 .light-color-bg p{
-    color: ##212529;
+    color: #212529;
 }
 .color-bg p{
     color: #fff;
@@ -232,7 +232,13 @@ body.overflow::before{
 
 
 
-
+@media only screen and (max-width: 1400px){
+    .content__inner {
+        padding: 0 40px;
+        max-width: 520px;
+        margin: auto;
+    }
+}
 @media only screen and (max-width: 1180px){
     .container{
         max-width: 90% !important;
@@ -260,5 +266,15 @@ body.overflow::before{
     
 }
 @media only screen and (max-width: 600px){
-  
+    .content__inner h3{
+        font-size: 34px;
+    }
+    .content__inner p, .content__inner ul li {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .content__inner {
+        padding: 0 20px;
+        max-width: 520px;
+    }
 }
