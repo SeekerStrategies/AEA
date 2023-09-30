@@ -202,6 +202,9 @@ body.overflow::before{
 .color-bg .content__inner ul li {
     color: #fff;
 }
+.team .vh-100{
+    padding: 60px 0;
+}
 .team {
     background: #79745c;
 }
@@ -238,11 +241,28 @@ body.overflow::before{
         max-width: 520px;
         margin: auto;
     }
+    #team .row{
+        justify-content: center !important;
+    }
+}
+@media only screen and (max-width: 1201px){
+    #team .vh-100, .content__row .vh-100{
+        height: auto !important;
+        min-height: 600px;
+    }
+    
 }
 @media only screen and (max-width: 1180px){
     .container{
         max-width: 90% !important;
         padding: 0 !important;
+    }
+    .content__inner p, .content__inner ul li {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .content__inner h3 {
+        font-size: 40px;
     }
 }
 @media only screen and (max-width: 991px){
@@ -250,6 +270,19 @@ body.overflow::before{
         width: 70%;
         margin: 40px auto 0;
         max-width: 390px;
+    }
+    #team .vh-100, .content__row .vh-100{
+        min-height: 500px;
+        padding: 60px 0;
+    }
+    #navbarNavDropdown .navbar-nav{
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    #top-menu .navbar-toggler{
+        border: none !important;
+        padding-left: 0;
+        padding-right: 0;    
     }
 }
 @media only screen and (max-width: 768px){
@@ -273,8 +306,17 @@ body.overflow::before{
         font-size: 18px;
         line-height: 28px;
     }
+    .content__inner ul li{
+        padding-left: 6px;
+    }
     .content__inner {
         padding: 0 20px;
         max-width: 520px;
+    }
+    #team .vh-100, .content__row .vh-100{
+        min-height: 400px;
+    }
+    .navbar .navbar-brand{
+        font-size: 20px;
     }
 }
