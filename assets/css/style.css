@@ -284,6 +284,32 @@ body.overflow::before{
         padding-left: 0;
         padding-right: 0;    
     }
+    #advocacy-outreach .col-lg-6:first-child {
+        background: #79745c;
+    }
+    #trusted-network .col-lg-6:first-child {
+        background: #709176;
+    }
+    #advocacy-outreach .col-lg-6:first-child .content__inner h3 {
+        color:#e6f5a7 !important;
+    }
+    #trusted-network .col-lg-6:first-child .content__inner h3 {
+        color:#e6f5a7 !important;
+    }
+    #advocacy-outreach .col-lg-6:first-child .content__inner ul li, #advocacy-outreach .col-lg-6:first-child p,
+    #trusted-network .col-lg-6:first-child .content__inner ul li, #trusted-network .col-lg-6:first-child p{
+        color: #fff !important;
+    }
+    #advocacy-outreach .color-bg, #trusted-network .color-bg {
+        background:#fff !important;
+    }
+    #advocacy-outreach .color-bg .content__inner ul li, #advocacy-outreach .color-bg p, #advocacy-outreach .color-bg .content__inner h3,
+    #trusted-network .color-bg .content__inner ul li, #trusted-network .color-bg p, #trusted-network .color-bg .content__inner h3 {
+        color: var(--bs-body-color) !important;
+    }
+    .content__inner h3 {
+        font-size: 36px;
+    }
 }
 @media only screen and (max-width: 768px){
     .logo {
@@ -296,7 +322,16 @@ body.overflow::before{
     }
 }
 @media only screen and (max-width:767px) {
-    
+    #team .vh-100, .content__row .vh-100{
+        min-height: 350px;
+    }
+    .content__inner {
+        padding: 0;
+        max-width: 85%;
+    }
+    .container {
+        max-width: 85% !important;
+    }
 }
 @media only screen and (max-width: 600px){
     .content__inner h3{
@@ -309,13 +344,6 @@ body.overflow::before{
     .content__inner ul li{
         padding-left: 6px;
     }
-    .content__inner {
-        padding: 0 20px;
-        max-width: 520px;
-    }
-    /* #team .vh-100, .content__row .vh-100{
-        min-height:500px;
-    } */
     .navbar .navbar-brand{
         font-size: 20px;
     }
