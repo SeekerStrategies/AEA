@@ -168,8 +168,8 @@ body.overflow::before{
     margin: 0 0 20px;
 }
 .content__inner p, .content__inner ul li {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
 }
 .content__inner ul li:not(:last-child) {
     margin-bottom: 30px;
@@ -191,7 +191,7 @@ body.overflow::before{
     color: #fff;
 }
 .energy-image__bg{
-    background: url(../images/energy.jpg) center no-repeat;
+    background: url(../images/moritz-kindler-gD8IO0E4OZM.jpg) center bottom no-repeat;
 }
 .content__inner .inner_list li:not(:last-child) {
     margin: 0;
@@ -229,12 +229,90 @@ body.overflow::before{
 .content__row .vh-100, .team .vh-100 {
     min-height: 700px;
 }
-
+.banner{
+    background-position: center bottom;
+    background-image: url(../images/katie-moum--LtFHnIh_Sg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    height: calc(100vh - 82px);
+}
+.what-we-do h3 {
+    color: #79745c;
+    margin: 0 0 20px;
+    font-size: 32px;
+}
+.what-we-do {
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.what-we-do ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.what-we-do ul li:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    background: #000;
+    border-radius: 100px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+#contact {
+    background: #f9f9f9;
+}
+.contact .btn-primary {
+    background: #79745c;
+    width: 100%;
+    border-color: #79745c;
+    border-radius: 0;
+    font-family: 'DM Sans', sans-serif;
+    padding: 0.6rem 0.75rem;
+}
+.contact .btn-primary:hover, .contact .btn-primary:focus, .contact .btn-primary:active {
+    background: #709176;
+    border-color: rgb(112 145 118);
+}
+.contact .btn-primary:focus, .contact .btn-check:active+.btn-primary:focus, .contact .btn-check:checked+.btn-primary:focus, .contact .btn-primary.active:focus, .contact .btn-primary:active:focus, .contact .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow:0 0 0 0.25rem rgba(112,145,118,.5) !important;
+}
+.contact .form-control {
+    padding: .6rem .75rem;
+    border-radius: 0;
+    border: 1px solid #e9e9e9;
+}
+.contact .form-label, .contact .form-control {
+    font-family: 'DM Sans', sans-serif;
+}
+textarea.form-control {
+    min-height: 150px !important;
+}
+.contact .row {
+    width: 100%;
+}
+.contact .content__inner {
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.bottom__footer {
+    background: #3c392b;
+    padding: 10px 0;
+}
+.bottom__footer p {
+    color: #fff;
+    font-size: 14px;
+}
 /****************************************************/
 
-
-
-
+@media only screen and (max-width: 1600px){
+    .content__inner {
+        padding: 0 100px;
+    }
+}
 @media only screen and (max-width: 1400px){
     .content__inner {
         padding: 0 40px;
@@ -248,7 +326,7 @@ body.overflow::before{
 @media only screen and (max-width: 1201px){
     #team .vh-100, .content__row .vh-100{
         height: auto !important;
-        min-height: 600px;
+        min-height: 700px;
     }
     
 }
@@ -256,10 +334,6 @@ body.overflow::before{
     .container{
         max-width: 90% !important;
         padding: 0 !important;
-    }
-    .content__inner p, .content__inner ul li {
-        font-size: 20px;
-        line-height: 30px;
     }
     .content__inner h3 {
         font-size: 40px;
@@ -310,6 +384,15 @@ body.overflow::before{
     .content__inner h3 {
         font-size: 36px;
     }
+    .what-we-do {
+        padding: 30px 0;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .what-we-do h3 {
+        margin: 0 0 15px;
+        font-size: 28px;
+    }
 }
 @media only screen and (max-width: 768px){
     .logo {
@@ -346,5 +429,12 @@ body.overflow::before{
     }
     .navbar .navbar-brand{
         font-size: 20px;
+    }
+    .what-we-do {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .what-we-do ul li {
+        margin-bottom: 5px;
     }
 }
