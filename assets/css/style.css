@@ -405,15 +405,18 @@ textarea.form-control {
     }
 }
 @media only screen and (max-width:767px) {
-    #team .vh-100, .content__row .vh-100{
-        min-height: 350px;
-    }
     .content__inner {
         padding: 0;
         max-width: 85%;
     }
     .container {
         max-width: 85% !important;
+    }
+    .banner {
+        height: 60vh;
+    }
+    .bottom__footer p {
+        font-size: 12px;
     }
 }
 @media only screen and (max-width: 600px){
